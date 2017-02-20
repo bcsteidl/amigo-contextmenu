@@ -3,6 +3,6 @@ require("./css/contextmenu.css")
 
 (function($) {
 
-    $.fn.contextmenu = require('../amigo-contextmenu')
+    $.fn.contextmenu = require('.')
 
 })(jQuery);

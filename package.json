@@ -1,19 +1,23 @@
 {
-    "name": "amigo-contextmenu",
-    "version": "2.5.0",
-    "description": "Plugin de contextualização de menus, podendo ser utilizado em NODEJS ou como plugin para desenvolvimento de frontend em javascript com JQuery",
-    "main": "index.js",
-    "scripts": {
-        "build": "NODE_PRD=FALSE webpack",
-        "build-min": "NODE_PRD=TRUE webpack -p",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Bruno César Steidl",
-    "license": "ISC",
-    "devDependencies": {
-        "css-loader": "^0.26.1",
-        "style-loader": "^0.13.1",
-        "url-loader": "^0.5.7",
-        "webpack": "^2.2.1"
-    }
+  "name": "amigo-contextmenu",
+  "version": "2.5.0",
+  "description": "Plugin de contextualização de menus, podendo ser utilizado em NODEJS ou como plugin para desenvolvimento de frontend em JS com JQuery",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_PRD=FALSE webpack",
+    "build-min": "NODE_PRD=TRUE webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno César Steidl",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.10.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "file-loader": "^0.10.0"
+  }
 }
