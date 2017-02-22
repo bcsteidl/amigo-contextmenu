@@ -1,7 +1,7 @@
 {
   "name": "amigo-contextmenu",
-  "version": "2.5.3",
-  "description": "Plugin de contextualização de menus, podendo ser utilizado em NODEJS ou como plugin para desenvolvimento de frontend em JS com JQuery",
+  "version": "2.5.4",
+  "description": "Pacote de contextualização de menus, podendo ser utilizado como CommonJS ou plugin na página principal do projeto.",
   "main": "index.js",
   "scripts": {
     "build": "NODE_PRD=FALSE webpack",
@@ -15,6 +15,7 @@
     "file-loader": "^0.10.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "^2.2.1"
+    "jquery": "^3.1.1",
+    "jquery-ui-dist": "^1.12.1"
   }
 }

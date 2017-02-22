@@ -34,6 +34,7 @@ module.exports = {
     resolve: {
         extensions: [".webpack.js", ".web.js", ".js", ".css"],
         alias: {
+            "jquery-ui": caminho("node_modules/jquery-ui-dist/jquery-ui.js"),
             css: caminho("css"),
             src: caminho("src")
         }

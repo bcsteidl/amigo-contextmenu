@@ -1,7 +1,6 @@
-// carga dos CSS do plugin
-require("./css/contextmenu.css")
-
 (function($) {
+
+    // require("./css/contextmenu.css")
 
     $.fn.contextmenu = require('.')
 

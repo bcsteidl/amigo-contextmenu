@@ -1,3 +1,7 @@
+require("./css/contextmenu.css")
+
+const $ = require('jquery')
+require('jquery-ui')
 
 function returnfalse() {
     return false;
