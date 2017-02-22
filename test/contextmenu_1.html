@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Teste de menu de contexto</title>
+
+    <script src='../node_modules/jquery/dist/jquery.min.js'></script>
+    <script src='../node_modules/jquery-ui-dist/jquery-ui.min.js'></script>
+    <script src='../dist/amigo-contextmenu.js'></script>
+
+</head>
+
+<body>
+    <div>
+        <h3>Clique aqui com o botão direito do mouse</h3></div>
+
+    <script>
+        const opcoes = {
+            onShow: function(menu) {
+                var itens = ["1-0", "2-0", "3-0", "4-0"];
+                itens.splice(itens.indexOf("2-0"), 1);
+                itens.splice(itens.indexOf("4-0"), 1);
+                menu.applyrule({
+                    enable: true,
+                    items: itens
+                });
+            },
+            width: 150,
+            items: [{
+                text: "Criar",
+                icon: "../css/images/contextmenu/m_arrow.gif",
+                alias: "1-0",
+                action: function() {
+                    console.log("Criado")
+                }
+            }, {
+                text: "Listar",
+                icon: "../css/images/contextmenu/m_arrow.gif",
+                alias: "2-0",
+                action: function() {
+                    console.log("Listado")
+                }
+            }, {
+                type: "splitLine"
+            }, {
+                text: "Editar",
+                icon: "../css/images/contextmenu/m_arrow.gif",
+                alias: "3-0",
+                action: function() {
+                    console.log("Editado")
+                }
+            }, {
+                text: "Apagar",
+                icon: "../css/images/contextmenu/m_arrow.gif",
+                alias: "4-0",
+                action: function() {
+                    console.log("Apagado")
+                }
+            }]
+        }
+
+        $('h3').contextmenu(opcoes)
+    </script>
+
+</body>
+
+</html>
