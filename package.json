@@ -1,6 +1,6 @@
 {
     "name": "amigo-contextmenu",
-    "version": "2.5.4",
+    "version": "2.5.5",
     "description": "Pacote de contextualização de menus, podendo ser utilizado como CommonJS ou plugin na página principal do projeto.",
     "main": "index.js",
     "scripts": {
