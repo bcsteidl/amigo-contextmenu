@@ -1,21 +1,23 @@
 {
-  "name": "amigo-contextmenu",
-  "version": "2.5.4",
-  "description": "Pacote de contextualização de menus, podendo ser utilizado como CommonJS ou plugin na página principal do projeto.",
-  "main": "index.js",
-  "scripts": {
-    "build": "NODE_PRD=FALSE webpack",
-    "build-min": "NODE_PRD=TRUE webpack -p",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Bruno César Steidl",
-  "license": "ISC",
-  "devDependencies": {
-    "css-loader": "^0.26.1",
-    "file-loader": "^0.10.0",
-    "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
-    "jquery": "^3.1.1",
-    "jquery-ui-dist": "^1.12.1"
-  }
+    "name": "amigo-contextmenu",
+    "version": "2.5.4",
+    "description": "Pacote de contextualização de menus, podendo ser utilizado como CommonJS ou plugin na página principal do projeto.",
+    "main": "index.js",
+    "scripts": {
+        "build": "NODE_PRD=FALSE webpack",
+        "build-min": "NODE_PRD=TRUE webpack -p",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Bruno César Steidl",
+    "license": "ISC",
+    "dependencies": {
+        "jquery": "^3.1.1",
+        "jquery-ui-dist": "^1.12.1"
+    },
+    "devDependencies": {
+        "css-loader": "^0.26.1",
+        "file-loader": "^0.10.0",
+        "style-loader": "^0.13.1",
+        "url-loader": "^0.5.7"
+    }
 }
