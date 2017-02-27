@@ -29301,7 +29301,7 @@ var stylesInDom = {},
 		};
 	},
 	isOldIE = memoize(function() {
-		return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
+		return /msie [6-9]\b/.test(self.navigator.userAgent.toLowerCase());
 	}),
 	getHeadElement = memoize(function () {
 		return document.head || document.getElementsByTagName("head")[0];
@@ -29591,8 +29591,6 @@ module.exports = "data:image/gif;base64,R0lGODlhGgABAJEAANDPz/////Dw8AAAACH5BAAA
 /***/ (function(module, exports, __webpack_require__) {
 
 (function($) {
-
-    // require("./css/contextmenu.css")
 
     $.fn.contextmenu = __webpack_require__(1)
 
